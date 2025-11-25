@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Procedural City Generator",
+        "desc": "The objective was creating an application that generates a 3D city model procedurally using algorithms and user-defined parameters.",
+        "longDesc": "Fully Generated 3D city model using Python and OpenGL with a Freeview camera able to travel anywhere on the map with hand gestures mapped to an XBOX Kinect and collision detection.",
+        "tech": [
+            "Python",
+            "OpenGL"
+        ],
+        "image": "/procedural_gen.jpg"
+    },
+    {
+        "title": "Mars Parcel Tracking System",
+        "desc": "A .NET 9 Web API for registering parcels destined for Mars, tracking status during transition, and exposing parcel data for consumption.",
+        "longDesc": "A CRUD Web API built with .NET 9 and C# that allows users to register parcels, update their status, and retrieve parcel information. The API follows RESTful principles and includes proper error handling and validation.",
+        "tech": [
+            ".Net 9",
+            "C#",
+            "CRUD",
+            "Swagger"
+        ],
+        "image": "/mars_tracking.png"
+    }
+]
