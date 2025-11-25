@@ -1,5 +1,6 @@
 import React from 'react';
 import projects from '../data/projects.json';
+import ProjectCard from './ProjectCard';
 import './Projects.css';
 
 export default function Projects() {
@@ -13,15 +14,7 @@ export default function Projects() {
                         const src = `${process.env.PUBLIC_URL || ''}${imgPath.startsWith('/') ? imgPath : '/' + imgPath}`;
 
                         return (
-                            <article key={i} className="project-card">
-                                <div className="project-image-wrap">
-                                    <img src={src} alt={p.title} className="project-image" />
-                                </div>
-                                <div className="project-content">
-                                    <h3>{p.title}</h3>
-                                    <p>{p.desc}</p>
-                                </div>
-                            </article>
+                            <ProjectCard key={i} project={{ ...p, image: src }} />
                         );
                     })}
                 </div>
